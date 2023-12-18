@@ -1,4 +1,4 @@
-CREATE DATABASE Аэропорт
+CREATE DATABASE AIRPORT
 
 CREATE TABLE airplane (
 	id_airplane VARCHAR NOT NULL, 
@@ -86,24 +86,24 @@ CREATE TABLE payment (
 	PRIMARY KEY (id_reservation), 
 	FOREIGN KEY(id_reservation) REFERENCES reservation (id_reservation)
 );
-INSERT INTO "airplane" VALUES('AP001','пассажирский','Boeing 737-800',189,'исправное');
-INSERT INTO "airplane" VALUES('AP002','пассажирский','Airbus A320neo',236,'исправное');
-INSERT INTO "airplane" VALUES('AP003','пассажирский','Embraer RRJ-190',114,'работоспособное');
-INSERT INTO "airplane" VALUES('AP004','пассажирский','Airbus A321neo',240,'работоспособное');
-INSERT INTO "airplane" VALUES('AP005','пассажирский','Airbus A319',140,'исправное');
-INSERT INTO "airplane" VALUES('AP006','пассажирский','Boeing 777-300',550,'работоспособное');
+INSERT INTO "airplane" VALUES('AP001','ГЇГ Г±Г±Г Г¦ГЁГ°Г±ГЄГЁГ©','Boeing 737-800',189,'ГЁГ±ГЇГ°Г ГўГ­Г®ГҐ');
+INSERT INTO "airplane" VALUES('AP002','ГЇГ Г±Г±Г Г¦ГЁГ°Г±ГЄГЁГ©','Airbus A320neo',236,'ГЁГ±ГЇГ°Г ГўГ­Г®ГҐ');
+INSERT INTO "airplane" VALUES('AP003','ГЇГ Г±Г±Г Г¦ГЁГ°Г±ГЄГЁГ©','Embraer RRJ-190',114,'Г°Г ГЎГ®ГІГ®Г±ГЇГ®Г±Г®ГЎГ­Г®ГҐ');
+INSERT INTO "airplane" VALUES('AP004','ГЇГ Г±Г±Г Г¦ГЁГ°Г±ГЄГЁГ©','Airbus A321neo',240,'Г°Г ГЎГ®ГІГ®Г±ГЇГ®Г±Г®ГЎГ­Г®ГҐ');
+INSERT INTO "airplane" VALUES('AP005','ГЇГ Г±Г±Г Г¦ГЁГ°Г±ГЄГЁГ©','Airbus A319',140,'ГЁГ±ГЇГ°Г ГўГ­Г®ГҐ');
+INSERT INTO "airplane" VALUES('AP006','ГЇГ Г±Г±Г Г¦ГЁГ°Г±ГЄГЁГ©','Boeing 777-300',550,'Г°Г ГЎГ®ГІГ®Г±ГЇГ®Г±Г®ГЎГ­Г®ГҐ');
 
-INSERT INTO "airport" VALUES('JFK','Informational Guide to John F. Kennedy International Airport','Билдинг 14, Нью-Йорк 11430, США','JFK/KJFK');
-INSERT INTO "airport" VALUES('DME','Домодедово','Россия, Московская область, Домодедовский район','DME/UUDD');
-INSERT INTO "airport" VALUES('ICN','Международный аэропорт Инчхон','272 Гонгханг-ро Джун-гу, код 400-700','ICN/RKSI');
-INSERT INTO "airport" VALUES('FCO','Фьюмичино','Лацио, Рим, Фьюмичино, Via Luigi Bleriot','FCO');
-INSERT INTO "airport" VALUES('AER','Международный аэропорт Сочи','Россиия, Адлер, Краснодарский край, ул. Мира, 50','AER/URSS');
-INSERT INTO "airport" VALUES('VVO','Международный аэропорт Владивосток','Россия, Приморский край, г. Артем, ул. Владимира Сайбеля 41','VVO/UHWW');
+INSERT INTO "airport" VALUES('JFK','Informational Guide to John F. Kennedy International Airport','ГЃГЁГ«Г¤ГЁГ­ГЈ 14, ГЌГјГѕ-Г‰Г®Г°ГЄ 11430, Г‘ГГЂ','JFK/KJFK');
+INSERT INTO "airport" VALUES('DME','Г„Г®Г¬Г®Г¤ГҐГ¤Г®ГўГ®','ГђГ®Г±Г±ГЁГї, ГЊГ®Г±ГЄГ®ГўГ±ГЄГ Гї Г®ГЎГ«Г Г±ГІГј, Г„Г®Г¬Г®Г¤ГҐГ¤Г®ГўГ±ГЄГЁГ© Г°Г Г©Г®Г­','DME/UUDD');
+INSERT INTO "airport" VALUES('ICN','ГЊГҐГ¦Г¤ГіГ­Г Г°Г®Г¤Г­Г»Г© Г ГЅГ°Г®ГЇГ®Г°ГІ Г€Г­Г·ГµГ®Г­','272 ГѓГ®Г­ГЈГµГ Г­ГЈ-Г°Г® Г„Г¦ГіГ­-ГЈГі, ГЄГ®Г¤ 400-700','ICN/RKSI');
+INSERT INTO "airport" VALUES('FCO','Г”ГјГѕГ¬ГЁГ·ГЁГ­Г®','Г‹Г Г¶ГЁГ®, ГђГЁГ¬, Г”ГјГѕГ¬ГЁГ·ГЁГ­Г®, Via Luigi Bleriot','FCO');
+INSERT INTO "airport" VALUES('AER','ГЊГҐГ¦Г¤ГіГ­Г Г°Г®Г¤Г­Г»Г© Г ГЅГ°Г®ГЇГ®Г°ГІ Г‘Г®Г·ГЁ','ГђГ®Г±Г±ГЁГЁГї, ГЂГ¤Г«ГҐГ°, ГЉГ°Г Г±Г­Г®Г¤Г Г°Г±ГЄГЁГ© ГЄГ°Г Г©, ГіГ«. ГЊГЁГ°Г , 50','AER/URSS');
+INSERT INTO "airport" VALUES('VVO','ГЊГҐГ¦Г¤ГіГ­Г Г°Г®Г¤Г­Г»Г© Г ГЅГ°Г®ГЇГ®Г°ГІ Г‚Г«Г Г¤ГЁГўГ®Г±ГІГ®ГЄ','ГђГ®Г±Г±ГЁГї, ГЏГ°ГЁГ¬Г®Г°Г±ГЄГЁГ© ГЄГ°Г Г©, ГЈ. ГЂГ°ГІГҐГ¬, ГіГ«. Г‚Г«Г Г¤ГЁГ¬ГЁГ°Г  Г‘Г Г©ГЎГҐГ«Гї 41','VVO/UHWW');
 INSERT INTO "airport" VALUES('SIN','Singapore Changi Airport','P.O. Box 1, Singapore 918 141','SIN/WSSS');
-INSERT INTO "airport" VALUES('LED','Международный аэропорт Пулково','Россия, Санкт-Петербург, Пулковское шоссе, 41, лит.ЗА','LED/ULLI');
-INSERT INTO "airport" VALUES('MRV','Международный аэропорт Минеральные Воды имени М. Ю. Лермонтова','Россия, Ставропольский край, г. Минеральные Воды, Территория Аэропорт','MRV/URMM');
-INSERT INTO "airport" VALUES('YVR','Vancouver International Airport','Шоссе Грант МакКоначи, г. Ричмонд, провинция Британская Колумбия, Канада','YVR/CYVR');
-INSERT INTO "airport" VALUES('DXB','Аэропорт Дубай','Department of Civil Aviation, P.O. Box 2525, Dubai, United Arab Emirates','DXB/OMDB');
+INSERT INTO "airport" VALUES('LED','ГЊГҐГ¦Г¤ГіГ­Г Г°Г®Г¤Г­Г»Г© Г ГЅГ°Г®ГЇГ®Г°ГІ ГЏГіГ«ГЄГ®ГўГ®','ГђГ®Г±Г±ГЁГї, Г‘Г Г­ГЄГІ-ГЏГҐГІГҐГ°ГЎГіГ°ГЈ, ГЏГіГ«ГЄГ®ГўГ±ГЄГ®ГҐ ГёГ®Г±Г±ГҐ, 41, Г«ГЁГІ.Г‡ГЂ','LED/ULLI');
+INSERT INTO "airport" VALUES('MRV','ГЊГҐГ¦Г¤ГіГ­Г Г°Г®Г¤Г­Г»Г© Г ГЅГ°Г®ГЇГ®Г°ГІ ГЊГЁГ­ГҐГ°Г Г«ГјГ­Г»ГҐ Г‚Г®Г¤Г» ГЁГ¬ГҐГ­ГЁ ГЊ. Гћ. Г‹ГҐГ°Г¬Г®Г­ГІГ®ГўГ ','ГђГ®Г±Г±ГЁГї, Г‘ГІГ ГўГ°Г®ГЇГ®Г«ГјГ±ГЄГЁГ© ГЄГ°Г Г©, ГЈ. ГЊГЁГ­ГҐГ°Г Г«ГјГ­Г»ГҐ Г‚Г®Г¤Г», Г’ГҐГ°Г°ГЁГІГ®Г°ГЁГї ГЂГЅГ°Г®ГЇГ®Г°ГІ','MRV/URMM');
+INSERT INTO "airport" VALUES('YVR','Vancouver International Airport','ГГ®Г±Г±ГҐ ГѓГ°Г Г­ГІ ГЊГ ГЄГЉГ®Г­Г Г·ГЁ, ГЈ. ГђГЁГ·Г¬Г®Г­Г¤, ГЇГ°Г®ГўГЁГ­Г¶ГЁГї ГЃГ°ГЁГІГ Г­Г±ГЄГ Гї ГЉГ®Г«ГіГ¬ГЎГЁГї, ГЉГ Г­Г Г¤Г ','YVR/CYVR');
+INSERT INTO "airport" VALUES('DXB','ГЂГЅГ°Г®ГЇГ®Г°ГІ Г„ГіГЎГ Г©','Department of Civil Aviation, P.O. Box 2525, Dubai, United Arab Emirates','DXB/OMDB');
 
 INSERT INTO "airticket" VALUES('MN789012','ICN456','2023-12-20 01:30:00.000000','2023-12-20 09:55:00.000000','M','PAS0011',29639.0);
 INSERT INTO "airticket" VALUES('KL123456','DXB012','2023-12-18 10:29:00.000000','2023-12-18 16:51:00.000000','D','PAS0006',340170.0);
@@ -114,12 +114,12 @@ INSERT INTO "airticket" VALUES('ST909597','MRV989','2023-12-22 08:44:00.000000',
 INSERT INTO "airticket" VALUES('ST509743','MRV019','2023-12-22 08:44:00.000000','2023-12-22 12:16:00.000000','S','PAS0009',5709.0);
 INSERT INTO "airticket" VALUES('ST037826','MRV087','2023-12-22 08:44:00.000000','2023-12-22 12:16:00.000000','S','PAS0010',5100.0);
 
-INSERT INTO "employee" VALUES('EM0001','Белоусов Сергей Альбертов','старший диспетчер','да','');
-INSERT INTO "employee" VALUES('EM0002','Серпионов Николай Филиппович','старший пилот','да','AP001');
-INSERT INTO "employee" VALUES('EM0003','Николин Федор Александрович','старший пилот','да','AP003');
-INSERT INTO "employee" VALUES('EM0004','Степнов Роман Кириллович','второй пилот','да','AP003');
-INSERT INTO "employee" VALUES('EM0005','Лескова Анастасия Александровна','старший бортпроводник','да','AP003');
-INSERT INTO "employee" VALUES('EM0006','Валуев Никита Денисович','стажер','нет','');
+INSERT INTO "employee" VALUES('EM0001','ГЃГҐГ«Г®ГіГ±Г®Гў Г‘ГҐГ°ГЈГҐГ© ГЂГ«ГјГЎГҐГ°ГІГ®Гў','Г±ГІГ Г°ГёГЁГ© Г¤ГЁГ±ГЇГҐГІГ·ГҐГ°','Г¤Г ','');
+INSERT INTO "employee" VALUES('EM0002','Г‘ГҐГ°ГЇГЁГ®Г­Г®Гў ГЌГЁГЄГ®Г«Г Г© Г”ГЁГ«ГЁГЇГЇГ®ГўГЁГ·','Г±ГІГ Г°ГёГЁГ© ГЇГЁГ«Г®ГІ','Г¤Г ','AP001');
+INSERT INTO "employee" VALUES('EM0003','ГЌГЁГЄГ®Г«ГЁГ­ Г”ГҐГ¤Г®Г° ГЂГ«ГҐГЄГ±Г Г­Г¤Г°Г®ГўГЁГ·','Г±ГІГ Г°ГёГЁГ© ГЇГЁГ«Г®ГІ','Г¤Г ','AP003');
+INSERT INTO "employee" VALUES('EM0004','Г‘ГІГҐГЇГ­Г®Гў ГђГ®Г¬Г Г­ ГЉГЁГ°ГЁГ«Г«Г®ГўГЁГ·','ГўГІГ®Г°Г®Г© ГЇГЁГ«Г®ГІ','Г¤Г ','AP003');
+INSERT INTO "employee" VALUES('EM0005','Г‹ГҐГ±ГЄГ®ГўГ  ГЂГ­Г Г±ГІГ Г±ГЁГї ГЂГ«ГҐГЄГ±Г Г­Г¤Г°Г®ГўГ­Г ','Г±ГІГ Г°ГёГЁГ© ГЎГ®Г°ГІГЇГ°Г®ГўГ®Г¤Г­ГЁГЄ','Г¤Г ','AP003');
+INSERT INTO "employee" VALUES('EM0006','Г‚Г Г«ГіГҐГў ГЌГЁГЄГЁГІГ  Г„ГҐГ­ГЁГ±Г®ГўГЁГ·','Г±ГІГ Г¦ГҐГ°','Г­ГҐГІ','');
 
 INSERT INTO "flight" VALUES('BRU955','2023-12-16 00:05:00.000000','2023-12-16 10:00:00.000000','DME','JFK','AP003',114);
 INSERT INTO "flight" VALUES('SBI2154','2023-12-20 01:30:00.000000','2023-12-20 09:55:00.000000','DME','ICN','AP002',236);
@@ -127,39 +127,39 @@ INSERT INTO "flight" VALUES('UAE130','2023-12-18 10:29:00.000000','2023-12-18 16
 INSERT INTO "flight" VALUES('SDM6355','2023-12-22 08:44:00.000000','2023-12-22 12:16:00.000000','LED','MRV','AP004',240);
 
 INSERT INTO "loyaltyprogram" VALUES('LP0001','PAS0001','S7 Priority',2.0);
-INSERT INTO "loyaltyprogram" VALUES('LP0002','PAS0002','Аэрофлот Бонус',50.0);
-INSERT INTO "loyaltyprogram" VALUES('LP0003','PAS0011','Аэрофлот Бонус',80.0);
+INSERT INTO "loyaltyprogram" VALUES('LP0002','PAS0002','ГЂГЅГ°Г®ГґГ«Г®ГІ ГЃГ®Г­ГіГ±',50.0);
+INSERT INTO "loyaltyprogram" VALUES('LP0003','PAS0011','ГЂГЅГ°Г®ГґГ«Г®ГІ ГЃГ®Г­ГіГ±',80.0);
 INSERT INTO "loyaltyprogram" VALUES('LP0004','PAS0011','S7 Priority',10.0);
-INSERT INTO "loyaltyprogram" VALUES('LP0005','PAS0007','Крылья',15.0);
-INSERT INTO "loyaltyprogram" VALUES('LP0006','PAS0004','Аэрофлот Бонус',60.0);
+INSERT INTO "loyaltyprogram" VALUES('LP0005','PAS0007','ГЉГ°Г»Г«ГјГї',15.0);
+INSERT INTO "loyaltyprogram" VALUES('LP0006','PAS0004','ГЂГЅГ°Г®ГґГ«Г®ГІ ГЃГ®Г­ГіГ±',60.0);
 
-INSERT INTO "passenger" VALUES('PAS0001','Харитонов Максим Маркович','4965 207768','email1@example.com, +7(495)652-63-38');
-INSERT INTO "passenger" VALUES('PAS0002','Харитонова Юлия Николаевна','4579 699581','email2@example.com, +7(495)769-85-12');
-INSERT INTO "passenger" VALUES('PAS0003','Харитонова Мария Максимовна','4295 979396','');
-INSERT INTO "passenger" VALUES('PAS0004','Мощенский Максим Юрьевич','4982 410174','+7(912)255-35-67, maksim9015@rambler.ru');
-INSERT INTO "passenger" VALUES('PAS0005','Ягункина Ксения Андреевна','4584 579044','+7(911)763-45-12, mirskaya@mail.ru');
-INSERT INTO "passenger" VALUES('PAS0006','Ягункин Александр Дмитриевич','4818 553753','+7(912)119-50-62');
-INSERT INTO "passenger" VALUES('PAS0007','Белоусов Сергей Николаевич','4852 609717','+7(495)769-85-12, sergeybel@gmail.ru');
-INSERT INTO "passenger" VALUES('PAS0008','Белоусова Анна Олеговна','4852 619917','+7(495)896-25-12, annabel@mail.ru');
-INSERT INTO "passenger" VALUES('PAS0009','Белоусов Андрей Сергеевич','4711 251795','');
-INSERT INTO "passenger" VALUES('PAS0010','Белоусов Александр Сергеевич','4711 296690','');
-INSERT INTO "passenger" VALUES('PAS0011','Широкова Елена Даниловна','4933 664782','+7(981)878-38-95, lena52@gmail.com');
+INSERT INTO "passenger" VALUES('PAS0001','Г•Г Г°ГЁГІГ®Г­Г®Гў ГЊГ ГЄГ±ГЁГ¬ ГЊГ Г°ГЄГ®ГўГЁГ·','4965 207768','email1@example.com, +7(495)652-63-38');
+INSERT INTO "passenger" VALUES('PAS0002','Г•Г Г°ГЁГІГ®Г­Г®ГўГ  ГћГ«ГЁГї ГЌГЁГЄГ®Г«Г ГҐГўГ­Г ','4579 699581','email2@example.com, +7(495)769-85-12');
+INSERT INTO "passenger" VALUES('PAS0003','Г•Г Г°ГЁГІГ®Г­Г®ГўГ  ГЊГ Г°ГЁГї ГЊГ ГЄГ±ГЁГ¬Г®ГўГ­Г ','4295 979396','');
+INSERT INTO "passenger" VALUES('PAS0004','ГЊГ®Г№ГҐГ­Г±ГЄГЁГ© ГЊГ ГЄГ±ГЁГ¬ ГћГ°ГјГҐГўГЁГ·','4982 410174','+7(912)255-35-67, maksim9015@rambler.ru');
+INSERT INTO "passenger" VALUES('PAS0005','ГџГЈГіГ­ГЄГЁГ­Г  ГЉГ±ГҐГ­ГЁГї ГЂГ­Г¤Г°ГҐГҐГўГ­Г ','4584 579044','+7(911)763-45-12, mirskaya@mail.ru');
+INSERT INTO "passenger" VALUES('PAS0006','ГџГЈГіГ­ГЄГЁГ­ ГЂГ«ГҐГЄГ±Г Г­Г¤Г° Г„Г¬ГЁГІГ°ГЁГҐГўГЁГ·','4818 553753','+7(912)119-50-62');
+INSERT INTO "passenger" VALUES('PAS0007','ГЃГҐГ«Г®ГіГ±Г®Гў Г‘ГҐГ°ГЈГҐГ© ГЌГЁГЄГ®Г«Г ГҐГўГЁГ·','4852 609717','+7(495)769-85-12, sergeybel@gmail.ru');
+INSERT INTO "passenger" VALUES('PAS0008','ГЃГҐГ«Г®ГіГ±Г®ГўГ  ГЂГ­Г­Г  ГЋГ«ГҐГЈГ®ГўГ­Г ','4852 619917','+7(495)896-25-12, annabel@mail.ru');
+INSERT INTO "passenger" VALUES('PAS0009','ГЃГҐГ«Г®ГіГ±Г®Гў ГЂГ­Г¤Г°ГҐГ© Г‘ГҐГ°ГЈГҐГҐГўГЁГ·','4711 251795','');
+INSERT INTO "passenger" VALUES('PAS0010','ГЃГҐГ«Г®ГіГ±Г®Гў ГЂГ«ГҐГЄГ±Г Г­Г¤Г° Г‘ГҐГ°ГЈГҐГҐГўГЁГ·','4711 296690','');
+INSERT INTO "passenger" VALUES('PAS0011','ГГЁГ°Г®ГЄГ®ГўГ  Г…Г«ГҐГ­Г  Г„Г Г­ГЁГ«Г®ГўГ­Г ','4933 664782','+7(981)878-38-95, lena52@gmail.com');
 
-INSERT INTO "payment" VALUES('ICN456','оплачено');
-INSERT INTO "payment" VALUES('DXB012','оплачено');
-INSERT INTO "payment" VALUES('DXB082','оплачено');
-INSERT INTO "payment" VALUES('JFK691','не оплачено');
-INSERT INTO "payment" VALUES('MRV456','ожидается');
+INSERT INTO "payment" VALUES('ICN456','Г®ГЇГ«Г Г·ГҐГ­Г®');
+INSERT INTO "payment" VALUES('DXB012','Г®ГЇГ«Г Г·ГҐГ­Г®');
+INSERT INTO "payment" VALUES('DXB082','Г®ГЇГ«Г Г·ГҐГ­Г®');
+INSERT INTO "payment" VALUES('JFK691','Г­ГҐ Г®ГЇГ«Г Г·ГҐГ­Г®');
+INSERT INTO "payment" VALUES('MRV456','Г®Г¦ГЁГ¤Г ГҐГІГ±Гї');
 
-INSERT INTO "reservation" VALUES('ICN456','SBI2154','подтвержден');
-INSERT INTO "reservation" VALUES('ICN789','SBI2154','отменен');
-INSERT INTO "reservation" VALUES('DXB012','UAE130','подтвержден');
-INSERT INTO "reservation" VALUES('DXB082','UAE130','подтвержден');
-INSERT INTO "reservation" VALUES('MRV456','SDM6355','подтвержден');
-INSERT INTO "reservation" VALUES('MRV989','SDM6355','подтвержден');
-INSERT INTO "reservation" VALUES('MRV019','SDM6355','подтвержден');
-INSERT INTO "reservation" VALUES('MRV087','SDM6355','подтвержден');
-INSERT INTO "reservation" VALUES('JFK705','BRU955','подтвержден');
-INSERT INTO "reservation" VALUES('JFK219','BRU955','подтвержден');
-INSERT INTO "reservation" VALUES('JFK691','BRU955','подтвержден');
+INSERT INTO "reservation" VALUES('ICN456','SBI2154','ГЇГ®Г¤ГІГўГҐГ°Г¦Г¤ГҐГ­');
+INSERT INTO "reservation" VALUES('ICN789','SBI2154','Г®ГІГ¬ГҐГ­ГҐГ­');
+INSERT INTO "reservation" VALUES('DXB012','UAE130','ГЇГ®Г¤ГІГўГҐГ°Г¦Г¤ГҐГ­');
+INSERT INTO "reservation" VALUES('DXB082','UAE130','ГЇГ®Г¤ГІГўГҐГ°Г¦Г¤ГҐГ­');
+INSERT INTO "reservation" VALUES('MRV456','SDM6355','ГЇГ®Г¤ГІГўГҐГ°Г¦Г¤ГҐГ­');
+INSERT INTO "reservation" VALUES('MRV989','SDM6355','ГЇГ®Г¤ГІГўГҐГ°Г¦Г¤ГҐГ­');
+INSERT INTO "reservation" VALUES('MRV019','SDM6355','ГЇГ®Г¤ГІГўГҐГ°Г¦Г¤ГҐГ­');
+INSERT INTO "reservation" VALUES('MRV087','SDM6355','ГЇГ®Г¤ГІГўГҐГ°Г¦Г¤ГҐГ­');
+INSERT INTO "reservation" VALUES('JFK705','BRU955','ГЇГ®Г¤ГІГўГҐГ°Г¦Г¤ГҐГ­');
+INSERT INTO "reservation" VALUES('JFK219','BRU955','ГЇГ®Г¤ГІГўГҐГ°Г¦Г¤ГҐГ­');
+INSERT INTO "reservation" VALUES('JFK691','BRU955','ГЇГ®Г¤ГІГўГҐГ°Г¦Г¤ГҐГ­');
 
